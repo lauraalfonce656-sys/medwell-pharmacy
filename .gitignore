@@ -1,0 +1,34 @@
+# Sensitive configuration
+config/config.php
+config/install.lock
+
+# Database
+database/*.sql
+
+# Uploaded files
+uploads/logos/*
+uploads/profiles/*
+!uploads/.htaccess
+!uploads/logos/.gitkeep
+!uploads/profiles/.gitkeep
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+error_log
+
+# Temp files
+*.tmp
+*.bak
+*.cache

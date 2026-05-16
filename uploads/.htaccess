@@ -1,0 +1,14 @@
+# Prevent PHP execution in uploads directory
+<FilesMatch "\.ph(p[2-7]?|t|tml)$">
+    Deny from all
+</FilesMatch>
+
+# Only allow image files
+<FilesMatch "\.(jpg|jpeg|png|gif|webp|svg)$">
+    Allow from all
+</FilesMatch>
+
+# Block all other file types
+<FilesMatch "^(?!.*\.(jpg|jpeg|png|gif|webp|svg)$).*$">
+    Deny from all
+</FilesMatch>
